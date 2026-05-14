@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://openparcelbox.org">
+    <img src="https://openparcelbox.org/assets/openparcelbox-logo-horizontal.svg" alt="OpenParcelBox" width="520">
+  </a>
+</p>
+
 # OpenParcelLock
 
 OpenParcelLock is an open lock module and interface profile for parcel boxes, cabinets and retrofit delivery lockers.
