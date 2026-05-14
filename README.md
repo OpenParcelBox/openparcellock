@@ -29,6 +29,7 @@ It should help with two common scenarios:
 - usable with self-hosted or standalone setups
 - optional integration with external controllers
 - retrofit-friendly mechanical concepts
+- no mandatory cloud, vendor app, Home Assistant, MQTT or bridge for basic local operation when used in a standalone OpenParcelBox device
 
 ## Planned Lock Profiles
 
@@ -48,6 +49,14 @@ It should help with two common scenarios:
 - Fail-safe and fail-secure behavior must be documented per lock profile.
 - Prototype designs must not include mains voltage on the board.
 - Mechanical emergency access must be considered early.
+
+## Standalone Management
+
+OpenParcelLock modules are only one part of a local-first device. A standalone OpenParcelBox controller using an OpenParcelLock-compatible lock path should provide local AP-mode setup and an embedded web management interface.
+
+See:
+
+- [Standalone management requirement](docs/standalone-management.md)
 
 ## Relationship to OpenParcelBox
 
