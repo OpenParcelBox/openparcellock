@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://openparcelbox.org">
-    <img src="https://openparcelbox.org/assets/openparcelbox-logo-horizontal.svg" alt="OpenParcelBox" width="520">
+    <img src="https://openparcelbox.org/assets/openparcelbox-readme-banner.png" alt="OpenParcelBox" width="900">
   </a>
 </p>
 
@@ -42,6 +42,22 @@ It should help with two common scenarios:
 - lock with sabotage/tamper contact
 - retrofit profile for existing parcel boxes
 
+## Current Focus
+
+OpenParcelLock should capture reusable lock knowledge that is not specific to one parcel-box model.
+
+The first OpenParcelBox milestone is a DHL parcel box retrofit, but the lock lessons should be documented here when they can apply to other boxes, cabinets or retrofit mechanisms.
+
+Current reusable topics:
+
+- 12 V pulse-driven lock outputs
+- lock-driver measurement protocol
+- fail-safe vs. fail-secure behavior
+- door state vs. lock state separation
+- tamper/sabotage state
+- emergency access assumptions
+- prototype-only vs. reference lock-driver patterns
+
 ## Important Safety Notes
 
 - A lock must not rely on blind motor timing as the only source of truth where a safer feedback option is possible.
@@ -49,6 +65,7 @@ It should help with two common scenarios:
 - Fail-safe and fail-secure behavior must be documented per lock profile.
 - Prototype designs must not include mains voltage on the board.
 - Mechanical emergency access must be considered early.
+- Generic MOSFET or relay modules are not automatically safe for a lock output; current, transients, boot state and thermal behavior must be measured.
 
 ## Standalone Management
 
@@ -57,6 +74,8 @@ OpenParcelLock modules are only one part of a local-first device. A standalone O
 See:
 
 - [Standalone management requirement](docs/standalone-management.md)
+- [Lock driver measurement protocol](docs/lock-driver-measurement.md)
+- [Repository scope](docs/repository-scope.md)
 
 ## Relationship to OpenParcelBox
 
