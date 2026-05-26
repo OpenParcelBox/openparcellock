@@ -90,4 +90,4 @@ OpenParcelBox should be able to support:
 
 Main project:
 
-https://github.com/OpenParcelBox/openparcelbox
+https://github.com/OpenParcelBox/specs
